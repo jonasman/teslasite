@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<head>
+  <title>Tesla Firmware Release Notes</title>
+  <meta charset='utf-8'/>
+  <meta name='description' content='Documentation website'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+  <link href='assets.css' rel='stylesheet' type='text/css'>
+</head>
+<body>  
+  <nav id='sidebar'>
+	<h1>Tesla Firmware Release Notes</h1>
+<ul id='links'>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <li><h2>V9.0</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/response-status-codes'>2018.48.12.1</a></li>
+              
+        <li class=''><a href='#/authentication'>2018.46.2</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>V8.1</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class='GET'><a href='#/get-stuff'>Get stuff</a></li>
+              
+        <li class='POST'><a href='#/post-a-thing'>Post a thing</a></li>
+              
+        <li class='PUT'><a href='#/put-a-thing'>Update a thing</a></li>
+              
+        <li class='DELETE'><a href='#/delete-a-thing'>Delete a thing</a></li>
+      
+    
+    </ul>
+  </li>
+
+</ul>
+</nav>
+
+<section id='content'>
+
+  <article class=''>
+    <a name='/response-status-codes' href='#/response-status-codes'><h2>2018.48.12.1</h2></a>
+    <section class='body'>
+      <h3 id="success">Success</h3>
+
+<p>Successes differ from errors in that their body may not be a simple response object with a code and a message. The headers however are consistent across all calls:</p>
+
+<ul>
+  <li><code>GET</code>, <code>PUT</code>, <code>DELETE</code> returns <code>200 OK</code> on success,</li>
+  <li><code>POST </code> returns 201 on success,</li>
+</ul>
+
+<p>When <a href="#get-stuff">retrieving stuff</a> for example:</p>
+
+<p><code>Status: 200 OK</code>
+<code>{
+    {
+        id: thing_1,
+        name: 'My first thing'
+    },
+    {
+        id: thing_2,
+        name: 'My second thing'
+    }
+}</code></p>
+
+<h3 id="error">Error</h3>
+
+<p>Error responses are simply returning <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">standard HTTP error codes</a> along with some additional information:</p>
+
+<ul>
+  <li>The error code is sent back as a status header,</li>
+  <li>The body includes an object describing both the code and message (for debugging and/or display purposes),</li>
+</ul>
+
+<p>For a call with an invalid authentication token for example:</p>
+
+<p><code>Status: 401 Access denied</code>
+<code>{
+    code: 401,
+    message: 'Access denied: invalid authentication token.'
+}</code></p>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/authentication' href='#/authentication'><h2>2018.46.2</h2></a>
+    <section class='body'>
+      <p>This method allows users to retrieve stuff.</p>
+
+<h3 id="response">Response</h3>
+
+<p>Sends back a collection of things.</p>
+
+<p><code>Authentication: bearer TOKEN</code>
+<code>{
+    id: thing_2,
+    name: 'My second thing'
+}</code></p>
+
+<p>For errors responses, see the <a href="#response-status-codes">response status codes documentation</a>.</p>
+
+    </section>
+  </article>
+
+  <article class='GET'>
+    <a name='/get-stuff' href='#/get-stuff'><h2><code><b>GET</b> _posts/2012-12-27-get-stuff.md</code> Get stuff</h2></a>
+    <section class='body'>
+      <p>This method allows users to retrieve stuff.</p>
+
+<h3 id="request">Request</h3>
+
+<ul>
+  <li>The headers must include a <strong>valid authentication token</strong>.</li>
+</ul>
+
+<h3 id="response">Response</h3>
+
+<p>Sends back a collection of things.</p>
+
+<p><code>Status: 200 OK</code>
+<code>{
+    {
+        id: thing_1,
+        name: 'My first thing'
+    },
+    {
+        id: thing_2,
+        name: 'My second thing'
+    }
+}</code></p>
+
+<p>For errors responses, see the <a href="#response-status-codes">response status codes documentation</a>.</p>
+
+    </section>
+  </article>
+
+  <article class='POST'>
+    <a name='/post-a-thing' href='#/post-a-thing'><h2><code><b>POST</b> _posts/2012-12-26-post-a-thing.md</code> Post a thing</h2></a>
+    <section class='body'>
+      <p>This method allows users to create a new thing.</p>
+
+<h3 id="request">Request</h3>
+
+<ul>
+  <li>The headers must include a <strong>valid authentication token</strong>.</li>
+  <li><strong>The body can’t be empty</strong> and must include at least the name attribute, a <code>string</code> that will be used as the name of the thing.</li>
+</ul>
+
+<p><code>Authentication: bearer TOKEN</code>
+<code>{
+    name: 'My new thing'
+}</code></p>
+
+<h3 id="response">Response</h3>
+
+<p><strong>If succeeds</strong>, returns the created thing.</p>
+
+<p><code>Status: 201 Created</code>
+<code>{
+    id: new_thing,
+    name: 'My new thing'
+}</code></p>
+
+<p>For errors responses, see the <a href="#response-status-codes">response status codes documentation</a>.</p>
+
+    </section>
+  </article>
+
+  <article class='PUT'>
+    <a name='/put-a-thing' href='#/put-a-thing'><h2><code><b>PUT</b> _posts/2012-12-25-put-a-thing.md</code> Update a thing</h2></a>
+    <section class='body'>
+      <p>This method allows the user to retrieve his stuff.</p>
+
+<h3 id="request">Request</h3>
+
+<ul>
+  <li><strong><code>:id</code></strong> is the id the thing to update.</li>
+  <li>The headers must include a <strong>valid authentication token</strong>.</li>
+  <li><strong>The body can’t be empty</strong> and must include at least the name attribute, a <code>string</code> that will be used as the name of the thing.</li>
+</ul>
+
+<p><code>Authentication: bearer f862f658-ad89-4fcb-995b-7a4c50554ff6</code>
+<code>{
+    name: 'My new thing'
+}</code></p>
+
+<h3 id="response">Response</h3>
+
+<p>Sends back a collection of things.</p>
+
+<p><code>Status: 200 OK</code>
+<code>{
+    {
+        id: thing_1,
+        name: 'My first thing'
+    },
+    {
+        id: thing_2,
+        name: 'My second thing'
+    }
+}</code></p>
+
+<p>For errors responses, see the <a href="#response-status-codes">response status codes documentation</a>.</p>
+
+    </section>
+  </article>
+
+  <article class='DELETE'>
+    <a name='/delete-a-thing' href='#/delete-a-thing'><h2><code><b>DELETE</b> _posts/2012-12-24-delete-a-thing.md</code> Delete a thing</h2></a>
+    <section class='body'>
+      <p>This method allows the user to post a new thing to his stuff.</p>
+
+<h3 id="request">Request</h3>
+
+<ul>
+  <li><strong><code>:id</code></strong> is the id the thing to delete.</li>
+  <li>The headers must include a <strong>valid authentication token</strong>.</li>
+  <li><strong>The body is omitted</strong>.</li>
+</ul>
+
+<h3 id="response">Response</h3>
+
+<p>Sends back a collection of things.</p>
+
+<p><code>Status: 200 Deleted</code>
+<code>{
+    code: 200,
+    message: 'Your thing (id: 736) was deleted'
+}</code></p>
+
+<p>For errors responses, see the <a href="#response-status-codes">response status codes documentation</a>.</p>
+
+    </section>
+  </article>
+
+</section>
+
+  
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  <script src='assets.js' type='text/javascript'></script>
+  <script>require('boot');</script>
+</body>
+</html>
