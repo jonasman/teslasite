@@ -1,6 +1,6 @@
 ---
 exclude: ['README.markdown']
 permalink: ':title'
-pygments: true
 safe: false
+highlighting: rouge
 title: 'Tesla Firmware Release Notes'
