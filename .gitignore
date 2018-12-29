@@ -1,3 +1,4 @@
 #local env
 Gemfile
 Gemfile.lock
+/_site/feed.xml
