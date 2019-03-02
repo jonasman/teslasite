@@ -28,6 +28,6 @@ Please contribute with sources if you find wrong dates.
 | Type                                                      | Start          
 |:----------------------------------------------------------|:------------------|
 | CCS connector in Europe                                   | 12/Dec/2018       |
-| Idle Fee with more than 50% occupied                      | 19/Sep/2018       |
+| Idle Fee when more than 50% of the stalls are occupied    | 19/Sep/2018       |
 | Idle Fee                                                  | 16/Dec/2016       |
 
