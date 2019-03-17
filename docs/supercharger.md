@@ -27,6 +27,7 @@ Please contribute with sources if you find wrong dates.
 
 | Type                                                      | Start          
 |:----------------------------------------------------------|:------------------|
+| Supercharger V3. 250kW, no stall sharing<br>Supercharger V2 updated to 145kW<br>On-Route Battery Warmup  | 6/Mar/2019       |
 | CCS connector in Europe                                   | 12/Dec/2018       |
 | Idle Fee when more than 50% of the stalls are occupied    | 19/Sep/2018       |
 | Idle Fee                                                  | 16/Dec/2016       |
