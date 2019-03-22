@@ -8,6 +8,7 @@ nav_order: 3
 
 | Change                            | Date |
 |:--------------------------------|:------|
+| Model S Standard range removed    | 22/Mar/2019 |
 | Model 3 MR removed    | 17/Mar/2019 |
 | Model Y orders open    | 15/Mar/2019 |
 | Autopilot price increase   | 12/Mar/2019 |
