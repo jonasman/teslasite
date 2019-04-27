@@ -19,5 +19,5 @@ nav_order: 3
 | Referral program ended              | 2/Feb/2019 |
 | New software locked battery options for Model S and X. Unlocked versions are now called "Extended Range" <br> Ludicrous is now a separate option for the Performance model             | 29/Jan/2019 |
 | 75D discontinued              | 14/Jan/2019 |
-| HW 2                             | 20/Oct/2017 |
+| AP HW 2                             | 20/Oct/2017 |
 
