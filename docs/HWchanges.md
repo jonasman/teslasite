@@ -8,7 +8,7 @@ nav_order: 3
 
 | Change                            | Date |
 |:--------------------------------|:------|
-| Model S/X with new drivetrain (PMSR motor), more range, suspension upgrade and 200kW charing rate on v3 Supercharger<br> Model S/X Standard range added | 23/Apr/2019 |  
+| Model S/X with new drivetrain (PMSR motor), more range, suspension upgrade and 200kW charging rate on v3 Supercharger<br> Model S/X Standard range added | 23/Apr/2019 |  
 | Model 3 SR opens orders in China and Europa    | 12/Apr/2019 |
 | Model S Standard range removed    | 22/Mar/2019 |
 | Model 3 MR removed    | 17/Mar/2019 |
