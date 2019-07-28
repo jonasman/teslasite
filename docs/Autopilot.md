@@ -9,7 +9,7 @@ nav_order: 4
 | Feature                            | AP 1 | EAP | FSD (requires EAP) | AP | FSD (requires AP) |
 | Availability | (Oct 2014 - 19th Oct 2016)  |  (Oct 2016 - 26th Feb 2019) |  (Oct 2016 - 26th Feb 2019) | (27th Feb 2019 - ) | (27th Feb 2019 - ) |
 |:--------------------------------|:------|:------|:------|:------|:------|
-| Adaptative cruise control | Yes | Yes | Yes | Yes | Yes |
+| Adaptative Cruise Control | <span style="color:green">Yes</span> | Yes | Yes | Yes | Yes |
 | Autosteer | Yes | Yes | Yes | Yes | Yes |
 | Summon | Yes | Yes | Yes | No | Yes |
 | Autopark | Yes | Yes | Yes | No | Yes |
@@ -21,7 +21,7 @@ nav_order: 4
 
 * Feature will be available in the future
 ** Autopilot 1 will make the car change lanes if you manually initiate it by activating your turn signal. It will not change lanes entirely on its own.
-
+<br>
 <a href="https://www.currentautomotive.com/tesla-changes-autopilot-feature-availability/?fbclid=IwAR2LDW4RYAewvi_Oul4PwVFEO1tBRcKpQEoh4HBK3IG4kq3AqF787aWL_tY">source</a>
 
 
