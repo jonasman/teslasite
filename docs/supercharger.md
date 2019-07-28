@@ -12,6 +12,7 @@ Please contribute with sources if you find wrong dates.
 | Type                                                      | Start             | End         |
 |:----------------------------------------------------------|:------------------|:------------|
 | <a href="https://electrek.co/2019/03/21/tesla-referral-program-win-model-y-and-roadster-signed-elon-musk/">1500km / 1000 mi of free Supercharging with a referral code</a> | 21/Mar/2019 | |
+| <a href="https://electrek.co/2019/07/22/tesla-removes-free-unlimited-supercharging-used-cars/">Free Supercharger in inventory for first owner</a> | ?? | 22/Jul/2019 |
 | <a href="https://electrek.co/2018/10/20/tesla-referral-program-six-months-free-supercharging/">6 months of Supercharging with referral</a>                    | 18/Sep/2018       | 2/Feb/2019 |
 | <a href="https://electrek.co/2018/10/20/tesla-referral-program-six-months-free-supercharging/">6 months of Supercharging + 100$ credit with referral</a>      | 12/Sep/2018       | 18/Sep/2018 |
 | <a href="https://electrek.co/2018/08/01/tesla-adds-free-supercharging-for-model-3-performance-to-referral-program-extends-program-to-september-16/">Supercharging for life for model 3 performance</a>       | 1/Aug/2012          | 18/Sep/2017 |
