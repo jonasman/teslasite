@@ -9,15 +9,15 @@ nav_order: 4
 | Feature                            | AP 1 | EAP | FSD (requires EAP) | AP | FSD (requires AP) |
 | Availability | (Oct 2014 - 19th Oct 2016)  |  (Oct 2016 - 26th Feb 2019) |  (Oct 2016 - 26th Feb 2019) | (27th Feb 2019 - ) | (27th Feb 2019 - ) |
 |:--------------------------------|:------|:------|:------|:------|:------|
-| Adaptative Cruise Control | <span style="color:green">Yes</span> | Yes | Yes | Yes | Yes |
-| Autosteer | Yes | Yes | Yes | Yes | Yes |
-| Summon | Yes | Yes | Yes | No | Yes |
-| Autopark | Yes | Yes | Yes | No | Yes |
-| Auto Lane Change | Yes** | Yes | Yes | No | Yes |
-| Navigate On Autopilot (NOA) | No | Yes | Yes | No | Yes |
-| Stop Signs and Traffic Lights Recognition * | No | No | Yes | No | Yes |
-| Automtic City Street Driving * | No | No | Yes | No | Yes |
-| Full Self Driving | No | No | Yes | No | Yes |
+| Adaptative Cruise Control | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> |
+| Autosteer | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> |
+| Summon | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Autopark | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Auto Lane Change | <span style="color:green">Yes**</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Navigate On Autopilot (NOA) | No | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Stop Signs and Traffic Lights Recognition * | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Automtic City Street Driving * | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Full Self Driving | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 
 * Feature will be available in the future
 ** Autopilot 1 will make the car change lanes if you manually initiate it by activating your turn signal. It will not change lanes entirely on its own.
