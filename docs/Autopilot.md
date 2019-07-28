@@ -19,7 +19,7 @@ nav_order: 4
 | Automtic City Street Driving * | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 | Full Self Driving | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 
-* Feature will be available in the future
+<span>* Feature will be available in the future</span>
 <br>
 ** Autopilot 1 will make the car change lanes if you manually initiate it by activating your turn signal. It will not change lanes entirely on its own.
 <br>
