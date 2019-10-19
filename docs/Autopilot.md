@@ -15,6 +15,7 @@ nav_order: 4
 | Autopark | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 | Auto Lane Change | <span style="color:green">Yes**</span> | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 | Navigate On Autopilot (NOA) | No | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
+| Smart Summon | No | <span style="color:green">Yes</span> | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 | Stop Signs and Traffic Lights Recognition * | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 | Automtic City Street Driving * | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
 | Full Self Driving | No | No | <span style="color:green">Yes</span> | No | <span style="color:green">Yes</span> |
