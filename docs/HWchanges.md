@@ -8,6 +8,7 @@ nav_order: 3
 
 | Change                            | Date |
 |:--------------------------------|:------|
+| Model S/X Long rage plus. Now 390 and 351 mile range, up from the previous 373 and 328 miles. New 19″ tempest wheels for Model S      | 1/May/2019 |
 | Model S/X CCS compatible, retrofits availabe for earlier versions           | 1/May/2019 |
 | Model S/X with new drivetrain (PMSR motor), more range, suspension upgrade and 200kW charging rate on v3 Supercharger<br> Model S/X Standard range added (aka Raven) | 23/Apr/2019 |  
 | Model 3 SR opens orders in China and Europa    | 12/Apr/2019 |
